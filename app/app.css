@@ -1,0 +1,56 @@
+/* app css stylesheet */
+
+body
+{
+    background-color : #080808;
+    color : #ffffff;
+}
+
+div.heading
+{
+    display: block;
+    background: radial-gradient(ellipse at top ,black 80% ,dimgrey);
+}
+
+
+
+.headingname
+{
+    text-align: center;
+    font-size: 3em;
+}
+.description
+{
+    text-align: center;
+    color: grey;
+}
+
+div.bodycontent
+{
+    display: block;
+    background: radial-gradient(ellipse at bottom, black 80%, dimgrey);
+}
+
+.navigationbar
+{
+    background-color: #080808;
+    color: white;
+    background: linear-gradient( dimgrey,black);
+    border : solid 0.1em black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li
+{
+    display: inline;
+    margin: 20px ;
+}
+
+li a :active
+{
+    color : red;
+}

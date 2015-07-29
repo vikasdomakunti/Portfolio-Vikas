@@ -1,0 +1,20 @@
+{
+  "name": "Portfolio-Vikas",
+  "version": "1.0.0",
+  "description": "My portfolio for jobs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vikas Domakunti",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.3",
+    "angular-route": "^1.4.3",
+    "angular-router": "0.0.2",
+    "bootstrap": "^3.3.5",
+    "font-awesome": "^4.3.0",
+    "grunt-cli": "^0.1.13",
+    "jquery": "^2.1.4"
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+    <title>Portfolio</title>
+</head>
+<body>
+<div class="heading">
+    <div class="headingname">Vikas Domakunti</div>
+    <div class="description">Portfolio</div>
+</div>
+
+<div class="navigationbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+<div class="bodycontent" ng-view></div>
+
+<script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="../node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="home/home.js"></script>
+<script type="text/javascript" src="projects/projects.js"></script>
+<script type="text/javascript" src="contact/contact.js"></script>
+<script type="text/javascript" src="resume/resume.js"></script>
+
+</body>
+
+</html>
