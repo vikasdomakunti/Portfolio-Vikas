@@ -2,55 +2,53 @@
 
 body
 {
-    background-color : #080808;
-    color : #ffffff;
+    margin: 0;
+    font-family: sans-serif;
+
 }
 
-div.heading
+.heading
 {
-    display: block;
-    background: radial-gradient(ellipse at top ,black 80% ,dimgrey);
-}
-
-
-
-.headingname
-{
+    background: url("images/41H.jpg") no-repeat ;
+    background-size: cover ;
+    height: 320px ;
     text-align: center;
-    font-size: 3em;
+    padding-top: 120px;
+
 }
+
+.heading-name
+{
+
+    display: inline-block;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    padding: 2px 20px;
+    text-transform: uppercase;
+    color: black;
+    border: solid black 3px;
+    text-align: center;
+
+}
+
 .description
 {
-    text-align: center;
-    color: grey;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
-div.bodycontent
-{
-    display: block;
-    background: radial-gradient(ellipse at bottom, black 80%, dimgrey);
-}
 
-.navigationbar
-{
-    background-color: #080808;
-    color: white;
-    background: linear-gradient( dimgrey,black);
-    border : solid 0.1em black;
-}
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }
 li
 {
-    display: inline;
-    margin: 20px ;
+    display: inline-block;
 }
 
-li a :active
+#document
 {
-    color : red;
+    text-align: center;
 }

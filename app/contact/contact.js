@@ -9,6 +9,10 @@ angular.module('myApp.contact', ['ngRoute'])
         });
     }])
 
-    .controller('ContactCtrl', [function() {
+    .controller('ContactCtrl', ['$scope', function($scope) {
 
+        $scope.isActive = function (viewLocation) {
+            var active = (viewLocation === $location.path());
+            return active;
+        };
     }]);

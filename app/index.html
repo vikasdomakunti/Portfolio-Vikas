@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Portfolio</title>
 </head>
 <body>
 <div class="heading">
-    <div class="headingname">Vikas Domakunti</div>
+    <div class="heading-name">Vikas Domakunti</div>
     <div class="description">Portfolio</div>
 </div>
 
-<div class="navigationbar">
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle " data-toggle="collapse" data-target="#navHeaderCollapse" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navHeaderCollapse" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-class="{ active: isActive('/home') }"><a href="#home">Home</a></li>
+                <li ng-class="{ active: isActive('/projects') }"><a href="#projects">Projects</a></li>
+                <li ng-class="{ active: isActive('/resume') }"><a href="#resume">Resume</a></li>
+                <li ng-class="{ active: isActive('/contact') }"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 <div class="bodycontent" ng-view></div>
 
 <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
 <script type="text/javascript" src="../node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
 <script type="text/javascript" src="home/home.js"></script>
 <script type="text/javascript" src="projects/projects.js"></script>

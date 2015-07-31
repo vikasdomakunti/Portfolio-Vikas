@@ -12,7 +12,12 @@ angular.module('myApp.resume', ['ngRoute'])
         });
     }])
 
-    .controller('ResumeCtrl', [function() {
+    .controller('ResumeCtrl', ['$scope', function($scope) {
+
+        $scope.isActive = function (viewLocation) {
+            var active = (viewLocation === $location.path());
+            return active;
+        };
 
 
     }]);
