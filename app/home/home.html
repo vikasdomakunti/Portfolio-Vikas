@@ -1,8 +1,30 @@
-<section>
+
+<section id="home-section">
     <h3 id="about-me"> About me</h3>
 
+    <div class="face-img"></div>
+
+    <div class="blurb">
+        <p class="blur">
+            <strong>Paragraphs are the building blocks of papers.</strong> Many students define paragraphs in terms of
+            length: a paragraph is
+            a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and
+            coherence of ideas among sentences is what constitutes a paragraph.
+        </p>
+    </div>
+
+    <div class="skill-lockup clearfix">
+
+        <div ng-repeat="skill in skillset" class="skill-unit">
+            <div class="skill-label">{{skill.skill}}</div>
+            <div class="skill-icons skill-{{skill.rating}}">
+                <span ng-repeat="skillrate in skillrate"
+                      ng-class=" skillrate>skill.rating ? 'unchecked': 'checked'"></span>
+            </div>
+        </div>
 
 
+    </div>
 
 
 </section>
