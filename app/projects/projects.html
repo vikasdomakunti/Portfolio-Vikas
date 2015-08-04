@@ -1,2 +1,19 @@
-
-<p>This is the partial for view 2.</p>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default" ng-repeat="project in projects">
+        <div class="panel-heading" role="tab" id="heading-{{project.number}}">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion"
+                   data-target="#collapse{{project.number}}"
+                   aria-expanded="false" aria-controls="collapse{{project.number}}">
+                    {{project.name}}
+                </a>
+            </h4>
+        </div>
+        <div id="collapse{{project.number}}" class="panel-collapse collapse" role="tabpanel"
+             aria-labelledby="heading-{{project.number}}">
+            <div class="panel-body">
+                {{project.description}}
+            </div>
+        </div>
+    </div>
+</div>

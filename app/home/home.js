@@ -22,7 +22,7 @@ angular.module('myApp.home', ['ngRoute'])
             {skill: 'Communication', rating: 8},
             {skill: 'Learning', rating: 8},
             {skill: 'Planning', rating: 8},
-            {skill: 'Coding', rating: 8},
+            {skill: 'Coding', rating: 5},
             {skill: 'Teamwork', rating: 8},
             {skill: 'Organization', rating: 8},
             {skill: 'UI Designing', rating: 8},

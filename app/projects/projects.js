@@ -16,4 +16,12 @@ angular.module('myApp.projects', ['ngRoute'])
         return active;
       };
 
+        $scope.projects=[
+            {number: 1,name:'Project1',description:'Project 1 description'},
+            {number: 2,name:'Project2',description:'Project 2 description'},
+            {number: 3,name:'Project3',description:'Project 3 description'},
+            {number: 4,name:'Project4',description:'Project 4 description'},
+            {number: 5,name:'Project5',description:'Project 5 description'},
+
+        ]
 }]);

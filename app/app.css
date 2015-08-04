@@ -131,9 +131,34 @@ li
     display: inline-block;
 }
 
+
+
+/*Project page */
+
+
+.panel-group
+{
+    max-width: 540px;
+    text-align: center;
+    margin: auto;
+
+}
+
+.panel
+{
+    width: 460px;
+    text-align: center;
+    margin: 0 40px 0 0;
+}
 #document
 {
     text-align: center;
+}
+
+iframe
+{
+    width: 70vmin;
+    height: 80vmin;
 }
 
 @media all and (max-width: 720px)
@@ -141,6 +166,12 @@ li
     .skill-lockup
     {
         padding: 0 20vw;
+    }
+
+    .panel
+    {
+        width: 70%;
+        margin: auto;
     }
 
 }
