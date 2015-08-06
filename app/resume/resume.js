@@ -19,5 +19,5 @@ angular.module('myApp.resume', ['ngRoute'])
             return active;
         };
 
-
+        
     }]);
