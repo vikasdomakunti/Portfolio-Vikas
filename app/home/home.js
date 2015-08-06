@@ -20,13 +20,13 @@ angular.module('myApp.home', ['ngRoute'])
 
         $scope.skillset = [
             {skill: 'Communication', rating: 8},
-            {skill: 'Learning', rating: 8},
-            {skill: 'Planning', rating: 8},
-            {skill: 'Coding', rating: 5},
+            {skill: 'Learning', rating: 9},
+            {skill: 'Planning', rating: 7},
+            {skill: 'Coding', rating: 9},
             {skill: 'Teamwork', rating: 8},
             {skill: 'Organization', rating: 8},
-            {skill: 'UI Designing', rating: 8},
-            {skill: 'Teaching', rating: 8},
+            {skill: 'UI Designing', rating: 7},
+            {skill: 'Teaching', rating: 7},
 
         ];
 

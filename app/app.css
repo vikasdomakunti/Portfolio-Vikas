@@ -1,26 +1,28 @@
 /* app css stylesheet */
 
-body
-{
+body {
     margin: 0;
     font-family: sans-serif;
 
 }
 
-
-
-.heading
-{
-    background: url("images/134H.jpg") no-repeat ;
-    background-size: cover ;
-    height: 320px ;
+.header {
+    background: url("images/134H.jpg") no-repeat;
+    background-size: cover;
+    height: 320px;
     text-align: center;
     padding-top: 120px;
 
 }
 
-.heading-name
-{
+.footer {
+
+    background: url("images/134H.jpg") no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+
+.heading-name {
 
     display: inline-block;
     font-size: 24px;
@@ -34,32 +36,27 @@ body
 
 }
 
-.description
-{
+.description {
     color: #5c2040;
     text-transform: uppercase;
     margin-top: 10px;
 }
 
-
 /* Home page styling */
-#home-section
-{
-    max-width:720px;
+#home-section {
+    max-width: 720px;
     margin: auto;
 
 }
 
-#about-me
-{
+#about-me {
     text-align: center;
-    margin : 60px 0px 20px 0px;
+    margin: 60px 0px 20px 0px;
 
 }
 
-.face-img
-{
-    background-image: url("images/face-img.png") ;
+.face-img {
+    background-image: url("images/face-img.png");
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -68,36 +65,34 @@ body
     margin: auto;
 }
 
-.blurb
-{
+.blurb {
     max-width: 620px;
-    padding:0 20px;
+    padding: 0 20px;
     font-size: 20px;
     text-align: center;
     font-weight: 300;
     margin: 40px auto;
 
 }
-.skill-lockup
-{
+
+.skill-lockup {
     max-width: 540px;
-    margin:100px auto;
-    color:inherit;
+    margin: 100px auto;
+    color: inherit;
 }
-.skill-unit
-{
+
+.skill-unit {
     width: 270px;
-    float :left;
+    float: left;
 }
 
-.skill-icons
-{
-    font-size:0;
-    margin:3px 0 30px;
+.skill-icons {
+    font-size: 0;
+    margin: 3px 0 30px;
 }
 
-span{
-    display:inline-block;
+span {
+    display: inline-block;
     height: 14px;
     width: 14px;
     background-color: #7D4D66;
@@ -106,70 +101,111 @@ span{
 
 }
 
-.skill-icons> span.unchecked
-{
-    background-color: lightgrey ;
+.skill-icons > span.unchecked {
+    background-color: lightgrey;
 }
-.skill-icons > span::after
-{
-    content:'';
-    display:block;
+
+.skill-icons > span::after {
+    content: '';
+    display: block;
     height: 10px;
     width: 10px;
-    background:white;
-    border-radius:50%;
-    margin:2px;
+    background: white;
+    border-radius: 50%;
+    margin: 2px;
 
 }
-
 
 ul {
     list-style-type: none;
 }
-li
-{
+
+li {
     display: inline-block;
 }
 
-
-
 /*Project page */
 
-
-.panel-group
-{
+.panel-group {
     max-width: 540px;
     text-align: center;
     margin: auto;
 
 }
 
-.panel
-{
+.panel {
     width: 460px;
     text-align: center;
     margin: 0 40px 0 0;
 }
-#document
-{
+
+#document {
     text-align: center;
 }
 
-iframe
-{
+iframe {
     width: 70vmin;
     height: 80vmin;
 }
 
-@media all and (max-width: 720px)
+/*Contact styling */
+.contact {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 720px;
+    min-height: 30vmax;
+    color : #7D4D66 !important;
+}
+
+.contact-header {
+    text-align: center;
+    font-size: 14px;
+    color : #7D4D66 !important;
+    margin: 40px 0 ;
+}
+
+.social-links
 {
-    .skill-lockup
-    {
+    margin: 40px 0;
+}
+
+.bar
+{
+    width: 250px;
+    height: 0px;
+    border-top: 4px solid #7D4D66;
+    margin: 0px auto 50px;
+}
+.contact-social {
+    color : #7D4D66 !important;
+    margin: 0 40px;
+
+}
+
+.contact-email {
+    display: inline-block;
+    color : #7D4D66 !important;
+
+    font-size: 5vw;
+    font-weight: 300;
+    line-height: 1;
+    width: 90%;
+    margin: 20px auto;
+}
+
+footer p {
+
+    position: absolute;
+    margin: 20px 0 20px 20px !important;
+}
+
+@media all and (max-width: 720px) {
+    .skill-lockup {
         padding: 0 20vw;
     }
 
-    .panel
-    {
+    .panel {
         width: 70%;
         margin: auto;
     }
