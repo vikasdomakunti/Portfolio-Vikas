@@ -152,8 +152,14 @@ iframe {
     color: #5c2040 ;
 }
 
+
 /*Project page */
 
+.project-heading
+{
+    color: #7D4D66;
+    text-align: center;
+}
 .panel-group {
     max-width: 540px;
     text-align: center;
@@ -164,9 +170,8 @@ iframe {
 .panel {
     width: 460px;
     text-align: center;
-    margin: 0 40px 0 0;
+    margin: 0 40px 0 40px;
 }
-
 
 
 /*Contact styling */
