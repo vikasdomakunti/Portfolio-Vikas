@@ -1,9 +1,9 @@
 # Setup
-title:            Vikas Domakunti on GitHub
-tagline:          'An online portfolio'
-description:      'An online portfolio'
-url:              "https://vikasdomakunti.github.io/"
+title: Vikas Domakunti on GitHub
+tagline: An online portfolio'
+description: An online portfolio
+url: https://vikasdomakunti.github.io
 baseurl: ''
 
 author:
-  name:           'Vikas Domakunti'
+  name: Vikas Domakunti
